@@ -145,8 +145,7 @@ try {
     
     const pageTitle = document.querySelector('.goods__title');
     const changePageTitle = () => {
-        pageTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;
-       
+        const href = document.querySelector(`[href*="#${hash}"]`).textContent;  //пылалась починить, но всё работает как вчера :<
     };
 
     const createCard = ({id, preview, cost, brand, name, sizes}) => {
