@@ -143,9 +143,9 @@ try {
         throw 'This is not a goods page.'
     }
     
-    let pageTitle = document.querySelector('.goods__title');
+    const pageTitle = document.querySelector('.goods__title');
     const changePageTitle = () => {
-        pageTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;  //пылалась починить, но всё работает как вчера :'<
+        pageTitle.textContent = document.querySelector(`[href*="#${hash}"]`).textContent;  //пыталась починить, но всё так же как вчера 
     };
 
     const createCard = ({id, preview, cost, brand, name, sizes}) => {
